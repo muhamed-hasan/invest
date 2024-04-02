@@ -25,4 +25,23 @@ th {
     cursor: pointer;
 }
 
+/* Sortable column indicator */
+th.sortable {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+/* Indicator for currently sorted column */
+th.sorted-asc, th.sorted-desc {
+    background-color: #ccc;
+}
+
+th.sorted-asc::after {
+    content: " \25B2"; /* Upward triangle for ascending sort */
+}
+
+th.sorted-desc::after {
+    content: " \25BC"; /* Downward triangle for descending sort */
+}
+
 tr:nth-child(even) {background-color: #f9f9f9;}
