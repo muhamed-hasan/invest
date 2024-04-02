@@ -12,6 +12,8 @@ function populateTable(data) {
 
     const table = document.getElementById('stockTable');
     const tableBody = table.getElementsByTagName('tbody')[0];
+    table.getElementsByTagName('thead')[0].innerHTML = '<tr></tr>';
+    tableBody.innerHTML = '';
     const headerRow = table.getElementsByTagName('thead')[0].rows[0];
 
     // Dynamically create headers
